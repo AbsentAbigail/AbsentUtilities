@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d17ea3-c71a-45b0-8127-10519cd5f469" name="Changes" comment="" />
+    <list default="true" id="b9d17ea3-c71a-45b0-8127-10519cd5f469" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractApplyXStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractApplyXStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractClunker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractClunker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractCompanion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCompanion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractTrait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractTrait.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CardHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LogHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TargetConstraintHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TargetConstraintHelper.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AbsentAbigail"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AbsentAbigail&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AbsentAbigail/AbsentUtils.git",
-    "accountId": "026fed22-ce7e-434f-86dd-f134af7c0e0d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AbsentAbigail/AbsentUtilities.git&quot;,
+    &quot;accountId&quot;: &quot;026fed22-ce7e-434f-86dd-f134af7c0e0d&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/225ac1e91b3845d9bbd0b8e0ff38fa082e200/a0/a0914c56/CollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/225ac1e91b3845d9bbd0b8e0ff38fa082e200/e9/f2875d02/GeneralExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,7 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/a5/ebffca01/Dictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/f8/baa0e7aa/Assembly.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AbstractApplyXStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/AbstractKeyword.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AbstractKeyword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CardDataExt.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -49,19 +59,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
@@ -92,6 +102,12 @@
       <workItem from="1729362273028" duration="1259000" />
       <workItem from="1729408832618" duration="781000" />
       <workItem from="1729409715725" duration="406000" />
+      <workItem from="1729410703755" duration="4911000" />
+      <workItem from="1729717114407" duration="1046000" />
+      <workItem from="1729771033734" duration="1576000" />
+      <workItem from="1729812260835" duration="698000" />
+      <workItem from="1729873198689" duration="3636000" />
+      <workItem from="1730022595288" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

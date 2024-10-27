@@ -33,7 +33,10 @@ public static class CardHelper
         var main = sprites.GetSprite(spriteName);
         var bg = sprites.GetSprite(spriteNameBg);
 
-        return builder.SetSprites(main, bg);
+        return builder.SetSprites(
+            main ?? modInfo.Mod.ImagePath(spriteName + ".png").ToSprite(),
+            bg ?? modInfo.Mod.ImagePath(spriteNameBg + ".png").ToSprite()
+        );
     }
 
     public static string[] UnitPools(Pools pool)

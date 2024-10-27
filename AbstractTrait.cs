@@ -19,8 +19,8 @@ public abstract class AbstractTrait(string id, string keyword = null, params str
             .Create(ID)
             .SubscribeToAfterAllBuildEvent(data =>
             {
-                data.effects = Effects.ToList().Select(e => AbsentUtils.TryGet<StatusEffectData>(e, mod)).ToArray();
-                data.keyword = AbsentUtils.TryGet<KeywordData>(Keyword, mod);
+                data.effects = Effects.ToList().Select(e => AbsentUtils.GetStatus(e, mod)).ToArray();
+                data.keyword = AbsentUtils.GetKeyword(Keyword, mod);
             });
     }
 }

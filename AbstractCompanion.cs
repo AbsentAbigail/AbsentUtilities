@@ -6,7 +6,7 @@ using JetBrains.Annotations;
 namespace AbsentUtilities;
 
 [PublicAPI]
-public abstract class AbstractUnit(
+public abstract class AbstractCompanion(
     string id,
     string title,
     int? health = null,
@@ -25,6 +25,7 @@ public abstract class AbstractUnit(
             .SetStats(Health, Attack, Counter)
             .SetAddressableSprites(ID, AltSprite, modInfo)
             .WithPools(CardHelper.UnitPools(Pools))
+            .DropsBling(4)
             .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
     }
 }

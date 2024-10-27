@@ -24,10 +24,7 @@ public abstract class AbstractClunker(
             .CreateUnit(ID, Title)
             .WithCardType("Clunker")
             .SetStats(null, Attack, Counter)
-            .SetStartWithEffect(new CardData.StatusEffectStacks(
-                AbsentUtils.TryGet<StatusEffectData>("Scrap", modInfo),
-                Scrap
-            ))
+            .SetStartWithEffect(AbsentUtils.SStack("Scrap", Scrap, modInfo))
             .SetAddressableSprites(ID, AltSprite, modInfo)
             .WithPools(CardHelper.ItemPools(Pools))
             .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);

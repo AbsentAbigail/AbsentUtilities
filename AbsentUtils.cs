@@ -16,8 +16,10 @@ public static class AbsentUtils
 
     private static Dictionary<Assembly, ModInfo> _modInfos = new();
 
-    public static T TryGetOrNull<T>(string name, ModInfo mod) where T : DataFile
+    public static T TryGetOrNull<T>(string name, ModInfo mod = null) where T : DataFile
     {
+        mod ??= GetModInfo(Assembly.GetCallingAssembly());
+        
         T data;
         if (typeof(StatusEffectData).IsAssignableFrom(typeof(T)))
             data = mod.Mod.Get<StatusEffectData>(name) as T;
@@ -27,8 +29,10 @@ public static class AbsentUtils
         return data;
     }
 
-    public static T TryGet<T>(string name, ModInfo mod) where T : DataFile
+    public static T TryGet<T>(string name, ModInfo mod = null) where T : DataFile
     {
+        mod ??= GetModInfo(Assembly.GetCallingAssembly());
+        
         var data = TryGetOrNull<T>(name, mod);
 
         return data ??
@@ -89,9 +93,9 @@ public static class AbsentUtils
         return builder;
     }
     
-    public static ModInfo GetModInfo(Assembly assembly)
+    public static ModInfo GetModInfo(Assembly assembly = null)
     {
-        return _modInfos.GetValueSafe(assembly);
+        return _modInfos.GetValueSafe(assembly ?? Assembly.GetCallingAssembly());
     }
 
     public static bool AddModInfo(ModInfo modInfo)

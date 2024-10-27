@@ -20,7 +20,7 @@ public class TargetConstraintHelper
     {
         var mod = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
         var targetConstraint = General(not ? "Does Not Have" : "Has" + $" Status {status}", modification, not);
-        targetConstraint.status = AbsentUtils.TryGet<StatusEffectData>(status, mod);
+        targetConstraint.status = AbsentUtils.GetStatus(status, mod);
         return targetConstraint;
     }
 
@@ -29,7 +29,7 @@ public class TargetConstraintHelper
     {
         var mod = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
         var targetConstraint = General(not ? "Does Not Have" : "Has" + $" Trait {trait}", modification, not);
-        targetConstraint.trait = AbsentUtils.TryGet<TraitData>(trait, mod);
+        targetConstraint.trait = AbsentUtils.GetTrait(trait, mod);
         return targetConstraint;
     }
 
@@ -99,7 +99,7 @@ public class TargetConstraintHelper
     {
         var mod = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
         var targetConstraint = General(not ? "Does Not Have" : "Has" + $" Attack Effect {status}", modification, not);
-        targetConstraint.effect = AbsentUtils.TryGet<StatusEffectData>(status, mod);
+        targetConstraint.effect = AbsentUtils.GetStatus(status, mod);
         return targetConstraint;
     }
 
@@ -108,7 +108,7 @@ public class TargetConstraintHelper
     {
         var mod = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
         var targetConstraint = General(not ? "Does Not Have" : "Has" + $" Effect Based On {status}", modification, not);
-        var type = AbsentUtils.TryGet<StatusEffectData>(status, mod).type;
+        var type = AbsentUtils.GetStatus(status, mod).type;
         targetConstraint.basedOnStatusType = type;
         return targetConstraint;
     }
