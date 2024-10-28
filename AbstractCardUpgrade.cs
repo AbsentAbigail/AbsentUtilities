@@ -12,6 +12,7 @@ public abstract class AbstractCardUpgrade(
     string title,
     string text,
     Pools pools = Pools.General,
+    bool altSprite = false,
     Action<CardUpgradeData> subscribe = null
 )
 {
@@ -19,10 +20,11 @@ public abstract class AbstractCardUpgrade(
 
     public virtual CardUpgradeDataBuilder Builder()
     {
-        return new CardUpgradeDataBuilder(AbsentUtils.GetModInfo(Assembly.GetCallingAssembly()).Mod)
+        var modInfo = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
+        return new CardUpgradeDataBuilder(modInfo.Mod)
             .Create(name)
             .WithType(CardUpgradeData.Type.Charm)
-            .WithImage($"{name}.png")
+            .SetAddressableSprites(name, altSprite, modInfo)
             .WithTitle(title)
             .WithText(text)
             .WithPools(PoolsToStringArray(pools))

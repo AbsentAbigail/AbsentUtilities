@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d17ea3-c71a-45b0-8127-10519cd5f469" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CardExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CardUpgradeExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentUtilities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentUtilities.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractApplyXStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractApplyXStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractCardUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCardUpgrade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractClunker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractClunker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractCompanion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCompanion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractTrait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractTrait.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CardHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LogHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TargetConstraintHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TargetConstraintHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardDataExt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mod.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/f8/baa0e7aa/Assembly.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AbstractApplyXStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AbstractKeyword.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CardDataExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CardUpgradeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -108,6 +112,9 @@
       <workItem from="1729812260835" duration="698000" />
       <workItem from="1729873198689" duration="3636000" />
       <workItem from="1730022595288" duration="9000" />
+      <workItem from="1730073138817" duration="1874000" />
+      <workItem from="1730142203722" duration="1439000" />
+      <workItem from="1730155784212" duration="1511000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -117,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729409583531</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AbsentUtilities">
+      <option name="closed" value="true" />
+      <created>1730073299169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730073299169</updated>
+    </task>
+    <task id="LOCAL-00003" summary="icon and tags">
+      <option name="closed" value="true" />
+      <created>1730073360480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730073360480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +165,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="AbsentUtilities" />
+    <MESSAGE value="icon and tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon and tags" />
   </component>
 </project>

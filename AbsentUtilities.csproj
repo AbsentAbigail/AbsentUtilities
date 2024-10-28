@@ -382,8 +382,8 @@
         <Compile Include="AbstractKeyword.cs"/>
         <Compile Include="AbstractStatus.cs"/>
         <Compile Include="AbstractTrait.cs"/>
-        <Compile Include="CardDataExt.cs" />
-        <Compile Include="CardHelper.cs"/>
+        <Compile Include="CardUpgradeExtensions.cs" />
+        <Compile Include="CardExtensions.cs" />
         <Compile Include="AbsentUtils.cs"/>
         <Compile Include="LogHelper.cs"/>
         <Compile Include="Mod.cs"/>

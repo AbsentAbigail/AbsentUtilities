@@ -26,7 +26,7 @@ public abstract class AbstractClunker(
             .SetStats(null, Attack, Counter)
             .SetStartWithEffect(AbsentUtils.SStack("Scrap", Scrap, modInfo))
             .SetAddressableSprites(ID, AltSprite, modInfo)
-            .WithPools(CardHelper.ItemPools(Pools))
+            .WithPools(ItemPools(Pools))
             .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
     }
 }

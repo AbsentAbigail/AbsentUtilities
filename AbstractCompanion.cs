@@ -24,7 +24,7 @@ public abstract class AbstractCompanion(
             .CreateUnit(ID, Title)
             .SetStats(Health, Attack, Counter)
             .SetAddressableSprites(ID, AltSprite, modInfo)
-            .WithPools(CardHelper.UnitPools(Pools))
+            .WithPools(UnitPools(Pools))
             .DropsBling(4)
             .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
     }

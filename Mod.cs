@@ -9,8 +9,12 @@ public class Mod : WildfrostMod
         AbsentUtils.AddModInfo(new AbsentUtils.ModInfo { Mod = this, Prefix = "UTILS ERROR" });
     }
 
-    public override string GUID => AbsentUtils.ID;
+    public override string GUID => "absentabigail.wildfrost.absentutils";
     public override string[] Depends => [];
     public override string Title => "Absent Utils";
-    public override string Description => "Modding Toolkit";
+    public override string Description => "Utility Library by AbsentAbigail\n" +
+                                          "Provides shared code for mods\n" +
+                                          "\n" +
+                                          "\n" +
+                                          "Source code: https://github.com/AbsentAbigail/AbsentUtilities";
 }

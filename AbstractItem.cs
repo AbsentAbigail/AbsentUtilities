@@ -27,7 +27,7 @@ public abstract class AbstractItem(
             .NeedsTarget(needsTarget)
             .WithValue(shopPrice)
             .SetAddressableSprites(ID, AltSprite, modInfo)
-            .WithPools(CardHelper.ItemPools(Pools))
+            .WithPools(ItemPools(Pools))
             .CanPlayOnHand(playOnHand)
             .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
     }

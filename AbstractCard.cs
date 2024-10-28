@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection;
+using HarmonyLib;
 using JetBrains.Annotations;
 
 namespace AbsentUtilities;
@@ -25,4 +27,47 @@ public abstract class AbstractCard(
     protected string ID = id;
     protected Action<CardData> Subscribe = subscribe ?? delegate { };
     protected string Title = title;
+
+    public static string CardTag(string name)
+    {
+        return $"<card={AbsentUtils.GetModInfo(Assembly.GetCallingAssembly()).Mod.GUID}.{name}>";
+    }
+
+    public static string[] UnitPools(Pools pool)
+    {
+        string[] pools = [];
+
+        if (pool.HasFlag(Pools.General))
+            pools = pools.AddToArray("GeneralUnitPool");
+
+        if (pool.HasFlag(Pools.Snowdweller))
+            pools = pools.AddToArray("BasicUnitPool");
+
+        if (pool.HasFlag(Pools.Shademancer))
+            pools = pools.AddToArray("MagicUnitPool");
+
+        if (pool.HasFlag(Pools.Clunkmaster))
+            pools = pools.AddToArray("ClunkUnitPool");
+
+        return pools;
+    }
+
+    public static string[] ItemPools(Pools pool)
+    {
+        string[] pools = [];
+
+        if (pool.HasFlag(Pools.General))
+            pools = pools.AddToArray("GeneralItemPool");
+
+        if (pool.HasFlag(Pools.Snowdweller))
+            pools = pools.AddToArray("BasicItemPool");
+
+        if (pool.HasFlag(Pools.Shademancer))
+            pools = pools.AddToArray("MagicItemPool");
+
+        if (pool.HasFlag(Pools.Clunkmaster))
+            pools = pools.AddToArray("ClunkItemPool");
+
+        return pools;
+    }
 }

@@ -12,8 +12,6 @@ namespace AbsentUtilities;
 [PublicAPI]
 public static class AbsentUtils
 {
-    public const string ID = "absentabigail.wildfrost.absentutils";
-
     private static Dictionary<Assembly, ModInfo> _modInfos = new();
 
     public static T TryGetOrNull<T>(string name, ModInfo mod = null) where T : DataFile
