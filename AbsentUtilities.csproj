@@ -378,6 +378,7 @@
         <Compile Include="AbstractCardUpgrade.cs"/>
         <Compile Include="AbstractClunker.cs"/>
         <Compile Include="AbstractCompanion.cs"/>
+        <Compile Include="AbstractEnemy.cs" />
         <Compile Include="AbstractItem.cs"/>
         <Compile Include="AbstractKeyword.cs"/>
         <Compile Include="AbstractStatus.cs"/>
@@ -385,6 +386,7 @@
         <Compile Include="CardUpgradeExtensions.cs" />
         <Compile Include="CardExtensions.cs" />
         <Compile Include="AbsentUtils.cs"/>
+        <Compile Include="LeaderHelper.cs" />
         <Compile Include="LogHelper.cs"/>
         <Compile Include="Mod.cs"/>
         <Compile Include="Pools.cs"/>
@@ -392,6 +394,7 @@
         <Compile Include="ScriptableHelper.cs"/>
         <Compile Include="StatusIconHelper.cs"/>
         <Compile Include="TargetConstraintHelper.cs"/>
+        <Compile Include="TribeHelper.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <PropertyGroup>

@@ -1,7 +1,7 @@
-﻿using System;
-using System.Reflection;
-using Deadpan.Enums.Engine.Components.Modding;
+﻿using Deadpan.Enums.Engine.Components.Modding;
 using JetBrains.Annotations;
+using System;
+using System.Reflection;
 
 namespace AbsentUtilities;
 
@@ -19,14 +19,11 @@ public abstract class AbstractClunker(
     public virtual CardDataBuilder Builder()
     {
         var modInfo = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
-
-        return new CardDataBuilder(modInfo.Mod)
+        return Builder(new CardDataBuilder(modInfo.Mod)
             .CreateUnit(ID, Title)
             .WithCardType("Clunker")
             .SetStats(null, Attack, Counter)
             .SetStartWithEffect(AbsentUtils.SStack("Scrap", Scrap, modInfo))
-            .SetAddressableSprites(ID, AltSprite, modInfo)
-            .WithPools(ItemPools(Pools))
-            .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
+            .WithPools(ItemPools(Pools)), modInfo);
     }
 }

@@ -17,10 +17,10 @@ public abstract class AbstractTrait(string id, string keyword = null, params str
         var mod = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
         return new TraitDataBuilder(mod.Mod)
             .Create(ID)
-            .SubscribeToAfterAllBuildEvent(data =>
+            .SubscribeToAfterAllBuildEvent(trait =>
             {
-                data.effects = Effects.ToList().Select(e => AbsentUtils.GetStatus(e, mod)).ToArray();
-                data.keyword = AbsentUtils.GetKeyword(Keyword, mod);
+                trait.effects = Effects.ToList().Select(e => AbsentUtils.GetStatus(e, mod)).ToArray();
+                trait.keyword = AbsentUtils.GetKeyword(Keyword, mod);
             });
     }
 }

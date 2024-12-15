@@ -24,7 +24,6 @@ public class AbstractStatus<T>(
     public virtual StatusEffectDataBuilder Builder()
     {
         ModInfo ??= AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
-        Debug.Log("Name: " + ID);
         var status = new StatusEffectDataBuilder(ModInfo.Mod)
             .Create<T>(ID)
             .WithStackable(CanStack)

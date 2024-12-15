@@ -25,7 +25,8 @@ public abstract class AbstractApplyXStatus<T>(
             {
                 var status = (T)data;
 
-                status.effectToApply = AbsentUtils.GetStatus(effectToApply, ModInfo);
+                if (!effectToApply.IsNullOrWhitespace())
+                    status.effectToApply = AbsentUtils.GetStatus(effectToApply, ModInfo);
                 status.applyToFlags = applyToFlags;
             });
     }

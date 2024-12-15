@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using Deadpan.Enums.Engine.Components.Modding;
 using HarmonyLib;
 using JetBrains.Annotations;
 
@@ -25,8 +26,11 @@ public abstract class AbstractCard(
     protected readonly int Scrap = scrap;
     protected bool AltSprite = altSprite;
     protected string ID = id;
-    protected Action<CardData> Subscribe = subscribe ?? delegate { };
+    public Action<CardData> Subscribe = subscribe ?? delegate { };
     protected string Title = title;
+    public virtual string FlavourText => null;
+    protected virtual string IdleAnimation => null;
+    protected virtual string BloodProfile => null;
 
     public static string CardTag(string name)
     {
@@ -69,5 +73,20 @@ public abstract class AbstractCard(
             pools = pools.AddToArray("ClunkItemPool");
 
         return pools;
+    }
+
+    protected CardDataBuilder Builder(CardDataBuilder builder, AbsentUtils.ModInfo modInfo)
+    {
+        builder
+            .SetAddressableSprites(ID, AltSprite, modInfo)
+            .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
+        if (FlavourText != null)
+            builder.WithFlavour(FlavourText);
+        if (IdleAnimation != null)
+            builder.WithIdleAnimationProfile(IdleAnimation);
+        if (BloodProfile != null)
+            builder.WithBloodProfile(BloodProfile);
+        
+        return builder;
     }
 }

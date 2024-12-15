@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d17ea3-c71a-45b0-8127-10519cd5f469" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CardExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CardUpgradeExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeaderHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TribeHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AbsentUtilities/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentUtilities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentUtilities.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractApplyXStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractApplyXStatus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractCardUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCardUpgrade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractClunker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractClunker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractCompanion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractCompanion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbstractItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardDataExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractTrait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractTrait.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mod.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +42,18 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/225ac1e91b3845d9bbd0b8e0ff38fa082e200/a0/a0914c56/CollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/225ac1e91b3845d9bbd0b8e0ff38fa082e200/e7/10e70660/Logger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/225ac1e91b3845d9bbd0b8e0ff38fa082e200/e9/f2875d02/GeneralExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45a525f6ad1345138253f54e018bb4e26200/97/e819ad46/StringExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/1c/62cb3834/ActionChangePhase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/28/89314c16/CardDataBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/2b/edadcd7f/CardDataBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/38/9bbc6f93/StatusEffectSummon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/59/3e98d5a3/WildfrostMod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/82/50528e05/CardType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6cfd501e41094c31bebddf2e7fcc442f204a00/c3/0c56afc8/StatusEffectInstantSummon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/a5/ebffca01/Dictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/f7/347655ee/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc4775c0ef484419a5c5e4041814e6dd5317b8/f8/baa0e7aa/Assembly.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AbstractApplyXStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AbstractKeyword.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +88,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -114,7 +123,19 @@
       <workItem from="1730022595288" duration="9000" />
       <workItem from="1730073138817" duration="1874000" />
       <workItem from="1730142203722" duration="1439000" />
-      <workItem from="1730155784212" duration="1511000" />
+      <workItem from="1730155784212" duration="1563000" />
+      <workItem from="1730305938049" duration="1209000" />
+      <workItem from="1730761822356" duration="1565000" />
+      <workItem from="1730829915457" duration="4150000" />
+      <workItem from="1731156400205" duration="8783000" />
+      <workItem from="1731264001025" duration="822000" />
+      <workItem from="1731358260250" duration="1546000" />
+      <workItem from="1731853386782" duration="2210000" />
+      <workItem from="1732387682593" duration="882000" />
+      <workItem from="1732388792942" duration="1250000" />
+      <workItem from="1732988191956" duration="1073000" />
+      <workItem from="1733422133325" duration="1922000" />
+      <workItem from="1734182927766" duration="4056000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -140,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730073360480</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rework code&#10;Charms can use SpriteAtlasses">
+      <option name="closed" value="true" />
+      <created>1730157345338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730157345338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +196,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="AbsentUtilities" />
     <MESSAGE value="icon and tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="icon and tags" />
+    <MESSAGE value="Rework code&#10;Charms can use SpriteAtlasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rework code&#10;Charms can use SpriteAtlasses" />
   </component>
 </project>

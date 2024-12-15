@@ -1,7 +1,7 @@
-﻿using System;
-using System.Reflection;
-using Deadpan.Enums.Engine.Components.Modding;
+﻿using Deadpan.Enums.Engine.Components.Modding;
 using JetBrains.Annotations;
+using System;
+using System.Reflection;
 
 namespace AbsentUtilities;
 
@@ -21,14 +21,12 @@ public abstract class AbstractItem(
     public virtual CardDataBuilder Builder()
     {
         var modInfo = AbsentUtils.GetModInfo(Assembly.GetCallingAssembly());
-        return new CardDataBuilder(modInfo.Mod)
+        return Builder(new CardDataBuilder(modInfo.Mod)
             .CreateItem(ID, Title)
             .SetDamage(Attack)
             .NeedsTarget(needsTarget)
             .WithValue(shopPrice)
-            .SetAddressableSprites(ID, AltSprite, modInfo)
             .WithPools(ItemPools(Pools))
-            .CanPlayOnHand(playOnHand)
-            .SubscribeToAfterAllBuildEvent(Subscribe.Invoke);
+            .CanPlayOnHand(playOnHand), modInfo);
     }
 }

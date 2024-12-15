@@ -6,16 +6,16 @@ using System.Reflection;
 namespace AbsentUtilities;
 
 [PublicAPI]
-public abstract class AbstractCompanion(
+public abstract class AbstractEnemy(
     string id,
     string title,
     int? health = null,
     int? attack = null,
     int counter = 0,
-    Pools pools = Pools.General,
+    AbstractEnemy.CardType cardType = AbstractEnemy.CardType.Enemy,
     Action<CardData> subscribe = null,
     bool altSprite = false
-) : AbstractCard(id, title, health, 0, attack, counter, pools, subscribe, altSprite)
+) : AbstractCard(id, title, health, 0, attack, counter, Pools.None, subscribe, altSprite)
 {
     public virtual CardDataBuilder Builder()
     {
@@ -24,6 +24,20 @@ public abstract class AbstractCompanion(
             .CreateUnit(ID, Title)
             .SetStats(Health, Attack, Counter)
             .WithPools(UnitPools(Pools))
-            .DropsBling(4), modInfo);
+            .DropsBling(4), modInfo)
+            .WithCardType(cardType.ToString());
+    }
+
+    public enum CardType
+    {
+        Boss,
+        BossSmall,
+        Clunker,
+        Enemy,
+        Friendly,
+        Item,
+        Leader,
+        Miniboss,
+        Summoned,
     }
 }
